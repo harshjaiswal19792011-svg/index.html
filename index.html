@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Best Sister</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+        }
+
+        .container {
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff4d6d;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 260px;
+            border-radius: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .name {
+            font-size: 30px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page 1 -->
+    <div class="container" id="page1">
+        <h1>Who is best sister? 🤔</h1>
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <!-- Page 2 (Final with Name + Image) -->
+    <div class="container" id="page2" style="display:none;">
+        <h1>💖 Best Sister 💖</h1>
+
+        <div class="name">Jiya Gopaliya ❤️</div>
+
+        <img src="https://i.ibb.co/fGMHCQ1y/Snapchat-1946544443.jpg" alt="Sister Image">
+    </div>
+
+    <script>
+        function nextPage() {
+            document.getElementById("page1").style.display = "none";
+            document.getElementById("page2").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
